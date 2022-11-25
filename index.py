@@ -42,7 +42,7 @@ def gen():
     model = load_model('models/right_a-z.h5')
 
     """Video streaming generator function."""
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture('http://192.168.43.1:4747/video)
 
     while True:
         success, img = cap.read()
